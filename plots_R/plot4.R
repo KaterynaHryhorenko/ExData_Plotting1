@@ -1,3 +1,6 @@
+rawData <- read.table('household_power_consumption.txt', header = T, stringsAsFactors = F,
+                      na.strings = "?", sep = ';', quote = "", skip = 66636, nrows = 2880)
+
 #png('plot4.png', width = 480, height = 480)
 par(mfrow = c(2, 2)) 
 #plots from left to right, top to bottom (since you used mfrow vs mfcol)
